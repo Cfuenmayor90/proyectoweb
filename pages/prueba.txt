@@ -1,0 +1,2 @@
+#ignora todos los archivos listados
+/pages/prueba.text
