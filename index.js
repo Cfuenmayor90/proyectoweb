@@ -14,7 +14,7 @@ app.use('/api', userRoutes);
 
 //rutas
 app.get("/", (req, res) => {
-    res.send("welcon to my api")
+    res.render("index");
 });
 mongoose
 .connect(process.env.MONGODB_URI)
