@@ -1,0 +1,28 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "carlos eduardo fuenmayor",
+    "age": "33",
+    "email": "cfgg@email.com"
+}
+
+###
+GET  http://localhost:3000/api/users HTTP/1.1
+
+###
+GET  http://localhost:3000/api/users/651b707a2677b7cb41eeecf8 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/users/651b3d9e3717dfdf62940287 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Ydianeth Miranda",
+    "age": "33",
+    "email": "cfgg@email.com"
+}
+
+###
+DELETE   http://localhost:3000/api/users/651b3e3b7d261b42becc9186 HTTP/1.1

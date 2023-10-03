@@ -9,21 +9,22 @@
 
 </head>
 <body>
+  
     <nav class="navegacion">
         <span >Cobranza App</span>
     </nav>
 
-    <form name="formIngre" action="" method="" class="formIngreso">
+    <form name="formIngre"  class="formIngreso" action="/api/users" method="get">
         <h1 class="tituloForm">Ingresar</h1>
         <div class="divInp">
             <label for="" class="tituloInp">Usuario</label><br>
-            <input id="inpIngresoUsuario" class="inpForm" type="text" placeholder="Ingresa Usuario" required>
+            <input id="inpIngresoUsuario" class="inpForm" type="text" placeholder="Ingresa Usuario" name="user" required>
         </div>
         <div class="divInp">
             <label for="" class="tituloInp">Contraseña</label><br>
-            <input id="inpIngresoContraseña" class="inpForm" type="number" placeholder="Ingresa Contraseña" required>
+            <input id="inpIngresoContrasena" class="inpForm" type="number" placeholder="Ingresa Contraseña" name="password" required>
         </div>
-        <a class="btnAceptar"  href="./page-html/principal.html" >Aceptar</a>
+        <button class="btnAceptar"  type="submit" >Aceptar</button>
         <a class="tituloInp" href="./page-html/formulario.html">Recuperar Cuenta</a>
         <a class="tituloInp" href="./page-html/formulario.html">Registrarse</a>
 
@@ -40,4 +41,5 @@
     </footer>
     
 </body>
+<script src="./index.js"></script>
 </html>

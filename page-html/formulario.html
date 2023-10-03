@@ -31,7 +31,7 @@
     </nav>
 
     <div class="divCon">
-        <form action="" class="formulario">
+        <form action="/users" method="post" class="formulario">
                 <h3 class="tituloForm">
                     Formulario De Contacto
                 </h3>
@@ -40,19 +40,16 @@
          
             <label class="title" for="nombre">Nombre</label>
             <br>
-            <input type="text" class="inpForm" placeholder="Escribe tu nombre" required>
+            <input type="text" class="inpForm" placeholder="Escribe tu nombre" name="name" required>
             <br>
             <label class="title" for="email">Email</label>
             <br>
-            <input type="email" class="inpForm" placeholder="Escribe tu Email" required>
+            <input type="email" class="inpForm" placeholder="Escribe tu Email" name="email" required>
             <br>
             <label class="title" for="telefono">Telefono</label>
             <br>
-            <input type="tel" class="inpForm" placeholder="Escribi tu telefono" required>
-            <br>
-            <label class="title" for="sitio">Sitio Web</label>
-            <br>
-            <input type="url" class="inpForm" placeholder="Escribe la Url de tu sitio" required>
+            <input type="tel" class="inpForm" placeholder="Escribi tu edad" name="age" required>
+            
             <br>
             <label class="title" for="asunto">Asunto</label>
             <br>
@@ -65,11 +62,12 @@
             <div class="cantBtnForm">
                 <button class="btnFormReset" type="reset">Limpiar</button>
           
-                <button class="btnFormAceptar" type="submit" href >Aceptar</button>
+                <button class="btnFormAceptar" type="submit">Aceptar</button>
 
             </div>
          
         </form>
     </div>
+    <script src="../index.js"></script>
 </body>
 </html>
