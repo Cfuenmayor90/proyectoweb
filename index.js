@@ -14,7 +14,7 @@ app.use('/api', userRoutes);
 
 //rutas
 app.get("/", (req, res) => {
-    res.redired("/index.html");
+   res.render("index");
 });
 mongoose
 .connect(process.env.MONGODB_URI)
